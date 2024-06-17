@@ -4,3 +4,5 @@ node_modules
 /ReactNativeSDK/Pods/Pods.xcodeproj/xcuserdata
 /ReactNativeSDK/ReactNativeSDK.xcodeproj/xcuserdata
 /ReactNativeSDK/archives
+/ReactNativeSDK/Pods
+/ReactNativeSDK/build
