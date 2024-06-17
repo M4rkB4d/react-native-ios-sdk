@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
                     name: "ReactNativeSDK.xcframework",
                     url: "https://github.com/M4rkB4d/react-native-ios-sdk/releases/download/1.0.0/ReactNativeSDK.xcframework.zip",
-                    checksum: "e226ea30be566ea7310b833cb26616c5db1353f44edd312d14017e0936cf7bcc"
+                    checksum: "2d73ed17184f16bc980830b3cff37f31267e9052d6e758a237ad33f379fce595"
                 )
     ]
 )

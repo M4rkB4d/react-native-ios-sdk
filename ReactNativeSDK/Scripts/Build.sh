@@ -35,5 +35,5 @@ xcodebuild \
 -output archives/ReactNativeSDK.xcframework
 
 # Zip XCFramework
-zip -r archives/ReactNativeSDK.xcframework.zip archives/MyFramework-iOS.xcarchive/Products/Library/Frameworks/ReactNativeSDK.framework archives/MyFramework-iOSSimulator.xcarchive/Products/Library/Frameworks/ReactNativeSDK.framework
+zip -r archives/ReactNativeSDK.xcframework.zip archives/ReactNativeSDK.xcframework
 
