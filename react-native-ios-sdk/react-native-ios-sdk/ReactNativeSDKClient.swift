@@ -13,11 +13,11 @@ public class ReactNativeSDKClient {
 
     // SHOULD BE THE SAME NAME DEFINED IN ./app.json
     private let moduleName: String
-    private var resourceName: String? = "main" // default name
+    private var resourceName: String
 
     public init(
         moduleName: String,
-        resourceName: String? = nil
+        resourceName: String
     )
     {
         self.moduleName = moduleName
