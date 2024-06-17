@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "group:New Group"
+      location = "group:"
       name = "Scripts">
       <FileRef
-         location = "group:../Scripts/Build.sh">
+         location = "group:Scripts/Build.sh">
       </FileRef>
    </Group>
    <FileRef
