@@ -5,6 +5,9 @@
       location = "group:New Group"
       name = "Scripts">
       <FileRef
+         location = "group:../Scripts">
+      </FileRef>
+      <FileRef
          location = "group:../Scripts/Build.sh">
       </FileRef>
    </Group>
