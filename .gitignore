@@ -1,0 +1,7 @@
+node_modules
+/ReactNativeSDK/ReactNativeSDK.xcworkspace/xcuserdata
+/ReactNativeSDK/ReactNativeSDK.xcworkspace/xcshareddata
+/ReactNativeSDK/ReactNativeSDK.xcodeproj/xcuserdata
+/ReactNativeSDK/archives
+/ReactNativeSDK/Pods
+/ReactNativeSDK/build
