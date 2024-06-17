@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A30D1C73AC762973F274694 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1F6B4FC736D1192D128AA7 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a */; };
+		9A077EF72C20771D00EBCD91 /* ReactNativeSDKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077EF62C20771D00EBCD91 /* ReactNativeSDKClient.swift */; };
 		9AD537D52C20733500074B2B /* ReactNativeSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9AD537D42C20733500074B2B /* ReactNativeSDK.docc */; };
 		9AD537DB2C20733500074B2B /* ReactNativeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD537D02C20733500074B2B /* ReactNativeSDK.framework */; };
 		9AD537E02C20733500074B2B /* ReactNativeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD537DF2C20733500074B2B /* ReactNativeSDKTests.swift */; };
@@ -29,6 +30,7 @@
 		0D7687419A7C096A1088DE5E /* Pods-ReactNativeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDK.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDK/Pods-ReactNativeSDK.release.xcconfig"; sourceTree = "<group>"; };
 		2F3E5E19C7E02D1EAC0DD381 /* Pods-ReactNativeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDK.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDK/Pods-ReactNativeSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		3E1F6B4FC736D1192D128AA7 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSDK-ReactNativeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A077EF62C20771D00EBCD91 /* ReactNativeSDKClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeSDKClient.swift; sourceTree = "<group>"; };
 		9AD537D02C20733500074B2B /* ReactNativeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactNativeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD537D32C20733500074B2B /* ReactNativeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeSDK.h; sourceTree = "<group>"; };
 		9AD537D42C20733500074B2B /* ReactNativeSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ReactNativeSDK.docc; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				9C095D75F3D4E66AA072B9FC /* Pods-ReactNativeSDK-ReactNativeSDKTests.debug.xcconfig */,
 				A664EE60EFF78F8CB88C207C /* Pods-ReactNativeSDK-ReactNativeSDKTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -97,6 +98,7 @@
 			children = (
 				9AD537D32C20733500074B2B /* ReactNativeSDK.h */,
 				9AD537D42C20733500074B2B /* ReactNativeSDK.docc */,
+				9A077EF62C20771D00EBCD91 /* ReactNativeSDKClient.swift */,
 			);
 			path = ReactNativeSDK;
 			sourceTree = "<group>";
@@ -312,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A077EF72C20771D00EBCD91 /* ReactNativeSDKClient.swift in Sources */,
 				9AD537D52C20733500074B2B /* ReactNativeSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +400,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -466,10 +466,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -548,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C095D75F3D4E66AA072B9FC /* Pods-ReactNativeSDK-ReactNativeSDKTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RDU4896V58;
@@ -565,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A664EE60EFF78F8CB88C207C /* Pods-ReactNativeSDK-ReactNativeSDKTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RDU4896V58;
