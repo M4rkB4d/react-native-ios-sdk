@@ -5,3 +5,4 @@ node_modules
 /ReactNativeSDK/archives
 /ReactNativeSDK/Pods
 /ReactNativeSDK/build
+*.tgz
