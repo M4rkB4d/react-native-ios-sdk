@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
                     name: "ReactNativeSDK.xcframework",
-                    url: "",
+                    url: "https://github.com/M4rkB4d/react-native-ios-sdk/releases/download/1.0.0/ReactNativeSDK.xcframework.zip",
                     checksum: "e226ea30be566ea7310b833cb26616c5db1353f44edd312d14017e0936cf7bcc"
                 )
     ]
