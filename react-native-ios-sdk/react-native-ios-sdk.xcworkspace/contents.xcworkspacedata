@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BuildXCFramework.sh">
+   </FileRef>
+   <FileRef
       location = "group:react-native-ios-sdk.xcodeproj">
    </FileRef>
    <FileRef
