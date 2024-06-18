@@ -11,33 +11,61 @@ import UIKit
 
 public class ReactNativeSDKClient {
 
-    // SHOULD BE THE SAME NAME DEFINED IN ./app.json
+    public enum ReactNativeProject {
+        case gofam // Globe Rewards Plus
+        case gnd // Globe Next Door
+
+        // module name should be the same name defined in app.json
+        // resource name should be the same name as the embeded jsbundle
+        var property: (
+            moduleName: String,
+            resourceName: String
+        ) {
+            switch self {
+            case .gofam:
+                ("GlobeRewardsPlus", "gofam")
+            case .gnd:
+                ("GlobeNextDoorApp", "gnd")
+            }
+        }
+    }
+
     private let moduleName: String
     private var resourceName: String
 
-    public init(
-        moduleName: String,
-        resourceName: String
+    public init(project: ReactNativeProject) {
+        self.moduleName = project.property.moduleName
+        self.resourceName = project.property.resourceName
+    }
+
+    public func getController(
+        initialProperties: [AnyHashable : Any]? = nil,
+        launchOptions: [AnyHashable : Any]? = nil
     )
+    -> UIViewController
     {
-        self.moduleName = moduleName
-        self.resourceName = resourceName
-    }
-
-    public func getView() -> UIView {
-        RCTRootView(
-            bundleURL: getBundle(),
+        guard let bundleURL = getBundle()
+        else {
+            return .init()
+        }
+        
+        let controller = UIViewController()
+        controller.view = RCTRootView(
+            bundleURL: bundleURL,
             moduleName: moduleName,
-            initialProperties: nil,
-            launchOptions: nil
+            initialProperties: initialProperties,
+            launchOptions: launchOptions
         )
+
+        return controller
     }
 
-    private func getBundle() -> URL {
+    private func getBundle() -> URL? {
         // USE FOR PRODUCTION, NEEDS A .js MINIFIED BUNDLE
-        Bundle.main.url(
-            forResource: resourceName,
-            withExtension: "jsbundle"
-        )!
+        Bundle(identifier: "personalproject.ReactNativeSDK")?
+            .url(
+                forResource: resourceName,
+                withExtension: "jsbundle"
+            )
     }
 }
