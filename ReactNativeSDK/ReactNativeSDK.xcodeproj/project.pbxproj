@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A30D1C73AC762973F274694 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1F6B4FC736D1192D128AA7 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a */; };
+		9A069C962C2189E6000D2029 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A069C952C2189E6000D2029 /* assets */; };
+		9A069C982C218A69000D2029 /* gofam.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A069C972C218A69000D2029 /* gofam.jsbundle */; };
+		9A069C9A2C218A7A000D2029 /* gnd.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A069C992C218A7A000D2029 /* gnd.jsbundle */; };
 		9A077EF72C20771D00EBCD91 /* ReactNativeSDKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077EF62C20771D00EBCD91 /* ReactNativeSDKClient.swift */; };
 		9AD537D52C20733500074B2B /* ReactNativeSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9AD537D42C20733500074B2B /* ReactNativeSDK.docc */; };
 		9AD537DB2C20733500074B2B /* ReactNativeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD537D02C20733500074B2B /* ReactNativeSDK.framework */; };
@@ -30,6 +33,9 @@
 		0D7687419A7C096A1088DE5E /* Pods-ReactNativeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDK.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDK/Pods-ReactNativeSDK.release.xcconfig"; sourceTree = "<group>"; };
 		2F3E5E19C7E02D1EAC0DD381 /* Pods-ReactNativeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDK.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDK/Pods-ReactNativeSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		3E1F6B4FC736D1192D128AA7 /* libPods-ReactNativeSDK-ReactNativeSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSDK-ReactNativeSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A069C952C2189E6000D2029 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		9A069C972C218A69000D2029 /* gofam.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gofam.jsbundle; sourceTree = "<group>"; };
+		9A069C992C218A7A000D2029 /* gnd.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gnd.jsbundle; sourceTree = "<group>"; };
 		9A077EF62C20771D00EBCD91 /* ReactNativeSDKClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeSDKClient.swift; sourceTree = "<group>"; };
 		9AD537D02C20733500074B2B /* ReactNativeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactNativeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD537D32C20733500074B2B /* ReactNativeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeSDK.h; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 		9AD537C62C20733500074B2B = {
 			isa = PBXGroup;
 			children = (
+				9A069C992C218A7A000D2029 /* gnd.jsbundle */,
+				9A069C972C218A69000D2029 /* gofam.jsbundle */,
+				9A069C952C2189E6000D2029 /* assets */,
 				9AD537D22C20733500074B2B /* ReactNativeSDK */,
 				9AD537DE2C20733500074B2B /* ReactNativeSDKTests */,
 				9AD537D12C20733500074B2B /* Products */,
@@ -216,6 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A069C962C2189E6000D2029 /* assets in Resources */,
+				9A069C982C218A69000D2029 /* gofam.jsbundle in Resources */,
+				9A069C9A2C218A7A000D2029 /* gnd.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +412,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -469,10 +478,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
