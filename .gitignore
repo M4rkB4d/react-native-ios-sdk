@@ -6,3 +6,5 @@ node_modules
 /ReactNativeSDK/Pods
 /ReactNativeSDK/build
 *.tgz
+package.json
+package-lock.json
